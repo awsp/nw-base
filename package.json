@@ -1,0 +1,13 @@
+{
+  "name": "NW Base",
+  "version": "1.0.0",
+  "main": "app.html",
+  "author": "Anthony S. Wu <anthony@ssetp.com>",
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 600,
+    "resizable": false,
+    "position": "mouse"
+  }
+}
