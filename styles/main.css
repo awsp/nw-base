@@ -7,43 +7,29 @@
 .text-right {
   text-align: right;
 }
-.noselect {
+.no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+.draggable {
+  -webkit-app-region: drag;
+}
+.non-draggable {
+  -webkit-app-region: no-drag;
 }
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-}
-#piosys {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  height: 100%;
-  width: 100%;
-  background: url('../images/school_logo_watermark.png') 50% 0px no-repeat;
-}
-#piosys * {
-  cursor: default;
-}
-#piosys #main-header {
-  text-align: center;
-  margin: 42px auto;
-}
-#piosys #main-header h1 {
-  font-size: 20px;
-  color: #666;
-}
-#piosys #main-container {
-  text-align: center;
-  padding: 21px;
 }
