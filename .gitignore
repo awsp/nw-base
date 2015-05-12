@@ -2,3 +2,7 @@ bower_components/
 node_modules/
 .idea/
 .DS_Store
+build/*
+!build/.gitkeep
+db/*
+!db/.gitkeep

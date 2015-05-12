@@ -1,13 +1,21 @@
 {
-  "name": "NW Base",
-  "version": "1.0.0",
+  "name": "nw-base",
+  "version": "0.2.0",
   "main": "app.html",
-  "author": "Anthony S. Wu <anthony@ssetp.com>",
+  "author": "Anthony S. Wu <anthonyspwu@gmail.com>",
   "window": {
     "toolbar": false,
     "width": 800,
     "height": 600,
     "resizable": false,
     "position": "mouse"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-util": "^3.0.4",
+    "node-webkit-builder": "^1.0.11"
+  },
+  "dependencies": {
+    "diskdb": "^0.1.14"
   }
 }
