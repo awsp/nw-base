@@ -1,8 +1,11 @@
-bower_components/
-node_modules/
 .idea/
 .DS_Store
+**/.DS_Store
 build/*
 !build/.gitkeep
-db/*
-!db/.gitkeep
+cache/*
+!cache/.gitkeep
+src/bower_components/
+src/node_modules/
+src/db/*
+!src/db/.gitkeep
