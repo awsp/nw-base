@@ -1,0 +1,16 @@
+{
+  "name": "nw-base",
+  "version": "0.2.0",
+  "main": "app.html",
+  "author": "Anthony S. Wu <anthonyspwu@gmail.com>",
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 600,
+    "resizable": false,
+    "position": "mouse"
+  },
+  "dependencies": {
+    "diskdb": "^0.1.14"
+  }
+}

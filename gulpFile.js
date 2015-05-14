@@ -4,7 +4,7 @@ var gutil = require('gulp-util');
 gulp.task('nw', function () {
 	var nw = new NwBuilder({
 		version: '0.12.1', // Current Node Version
-		files: ['./**'],
+		files: ['./src/**'],
 		platforms: ['osx64', 'win64'], // Available options ['osx', 'osx32', 'osx64', 'win', 'win32', 'win64']
 		macZip: true
 		//,
