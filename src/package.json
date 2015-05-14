@@ -10,6 +10,10 @@
     "resizable": false,
     "position": "mouse"
   },
+  "webkit": {
+    "plugin": true
+  },
+  "chromium-args": "--ignore-certificate-errors",
   "dependencies": {
     "diskdb": "^0.1.14"
   }

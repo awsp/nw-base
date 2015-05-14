@@ -1,6 +1,6 @@
 {
   "name": "nw-build-tools",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Anthony S. Wu <anthonyspwu@gmail.com>",
   "devDependencies": {
     "gulp": "^3.8.11",
