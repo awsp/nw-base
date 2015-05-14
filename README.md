@@ -41,10 +41,11 @@ For decent app packaging, there should be explicitly list up in `files` attribut
 
 
 #### ToDo
-- Add a gulp task to bootstrap all dependencies installation when first using this package. 
+- Add a gulp task to bootstrap all dependencies installation when first using this package. Ex. `gulp bootstrap`
 - Add a gulp task to remove `.git` folder. 
 - Add a gulp task to minifying resources into pre-compiled `src` folder. 
 - Add a gulp task to manipulate used library files into a pre-compiled `src` folder for packaging. 
 - Separate gulp task for packagin in individual platforms. 
 - Remove hard depedency of nw since it is assumed `nw` is an alias to some location in user's system. 
   Add dependency to node-webkit as dev environment to make it possible to do things like `gulp run`, etc.
+- Generate `src/package.json` on the fly, along with `gulp bootstrap` to certain user configuration on their app. 
