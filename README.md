@@ -1,4 +1,4 @@
-nw-base @version 0.2.1
+nw-base @version 0.2.2
 ------------------------------
 NW base app for creating ready-to-use desktop class-like self-contained application on all platforms.
 Along with built tools to package and distribute app in different platforms. 

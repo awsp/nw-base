@@ -1,6 +1,10 @@
 var NwBuilder = require('node-webkit-builder');
 var gulp = require('gulp');
 var gutil = require('gulp-util');
+var install = require("gulp-install");
+var del = require('del');
+
+// Build package
 gulp.task('nw', function () {
 	var nw = new NwBuilder({
 		version: '0.12.1', // Current Node Version
@@ -20,3 +24,18 @@ gulp.task('nw', function () {
 		gutil.log('node-webkit-builder', err);
 	});
 });
+
+// Clean .git folder
+gulp.task('clean:git', function (cb) {
+	del([
+		'test/'
+	], cb);
+});
+
+// Install `src` folder dependencies
+gulp.task('src:install', function () {
+	gulp.src(['./src/bower.json', './src/package.json']).pipe(install());
+});
+
+// Init 
+gulp.task('init', ['clean:git', 'src:install']);

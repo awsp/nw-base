@@ -1,9 +1,11 @@
 {
   "name": "nw-build-tools",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "author": "Anthony S. Wu <anthonyspwu@gmail.com>",
   "devDependencies": {
+    "del": "^1.1.1",
     "gulp": "^3.8.11",
+    "gulp-install": "^0.4.0",
     "gulp-util": "^3.0.4",
     "node-webkit-builder": "^1.0.11"
   }
