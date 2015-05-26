@@ -1,6 +1,6 @@
 {
   "name": "nw-build-tools",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "author": "Anthony S. Wu <anthonyspwu@gmail.com>",
   "devDependencies": {
     "del": "^1.1.1",

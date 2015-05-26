@@ -28,7 +28,8 @@ gulp.task('nw', function () {
 // Clean .git folder
 gulp.task('clean:git', function (cb) {
 	del([
-		'test/'
+		'test/',
+		'.git'
 	], cb);
 });
 

@@ -1,4 +1,4 @@
-nw-base @version 0.2.2
+nw-base @version 0.3.0
 ------------------------------
 NW base app for creating ready-to-use desktop class-like self-contained application on all platforms.
 Along with built tools to package and distribute app in different platforms. 
@@ -38,6 +38,11 @@ gulp nw
 - Packaging
 The use of bower makes the compiled package large as `gulp nw` literally zips everything in the `src` folder.
 For decent app packaging, there should be explicitly list up in `files` attribute. 
+
+- package.json
+It seems there is an error with package.json name attribute that prevents it from rendereing in Windows environment. 
+Changed to camelcase works.  
+
 
 
 #### ToDo
