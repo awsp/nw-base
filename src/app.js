@@ -7,8 +7,22 @@ global.$ = $;
 global._ = _;
 
 
-app.controller('MainController', function () {
-  this.close = function () {
+app.controller('MainController', [function () {
+
+}]);
+
+app.controller('MainFrameController', [function () {
+  this.config = {
+    buttons: {
+      close: true,
+      minimize: false,
+      maximize: false
+    }
+  };
+  this.title = 'Welcome to nwBase!';
+  this.content = 'modules/home/top.html';
+  this.close = function ($event) {
+    $event.preventDefault();
     win.close();
   }
-});
+}]);

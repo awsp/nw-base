@@ -1,0 +1,10 @@
+<div class="main-frame" ng-controller="MainFrameController as mainFrame">
+  <header class="window-header">
+    <a href="#" ng-click="mainFrame.close($event)" class="close" ng-show="mainFrame.config.buttons.close">
+      <i class="fa fa-times"></i>
+    </a>
+    <h1 class="title">{{ mainFrame.title }}</h1>
+  </header>
+
+  <div class="content" ng-include="mainFrame.content"></div>
+</div>
