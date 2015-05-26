@@ -8,5 +8,8 @@
     "gulp-install": "^0.4.0",
     "gulp-util": "^3.0.4",
     "node-webkit-builder": "^1.0.11"
+  },
+  "scripts": {
+    "install": "gulp src:install"
   }
 }
