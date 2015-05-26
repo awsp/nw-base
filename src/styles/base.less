@@ -1,25 +1,38 @@
+@import "elements";
+
 .text-center { text-align: center; }
 .text-left { text-align: left; }
 .text-right { text-align: right; }
+.text-bold { font-weight: bold; }
+.text-italic { font-style: italic; }
 
-.no-select {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.reset {
+  margin: 0;
+  padding: 0;
 }
+
+.default-cursor {
+  cursor: default;
+}
+
 .draggable {
   -webkit-app-region: drag;
 }
+
 .non-draggable {
   -webkit-app-region: no-drag;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  .no-select;
+  .user-select(none);
+  background: transparent;
 }

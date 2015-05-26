@@ -4,24 +4,108 @@
     <title>NW Base</title>
     <meta charset="UTF-8">
     <!-- Style Libraries -->
-    <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css"/>
     <link rel="stylesheet" href="styles/base.css"/>
+    <link rel="stylesheet" href="styles/semantic.min.css"/>
+    <link rel="stylesheet" href="bower_components/kendo-ui/styles/kendo.common.core.min.css"/>
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"/>
 
     <!-- Core Libraries -->
     <script src="lib/windows.js"></script>
     <script src="lib/menus.js"></script>
     <script src="lib/menubar.js"></script>
-    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-    <script type="text/javascript" src="bower_components/uikit/js/uikit.min.js"></script>
+    <script type="text/javascript" src="bower_components/kendo-ui/js/kendo.core.min.js"></script>
+    <script type="text/javascript" src="bower_components/kendo-ui/js/kendo.ui.core.min.js"></script>
+    <script type="text/javascript" src="bower_components/kendo-ui/js/kendo.angular.min.js"></script>
 
     <!-- App Libraries -->
+    <link rel="stylesheet" href="styles/theme.css"/>
+    <link rel="stylesheet" href="styles/ui.css"/>
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body ng-app="nwbase">
-    <h1>NW Base</h1>
+
+    <div ng-controller="MainController as main" class="main-frame">
+      <header class="window-header">
+        <a href="#" ng-click="main.close($event)" class="close">
+          <i class="fa fa-times"></i>
+        </a>
+        <h1 class="title">Welcome to nwBase</h1>
+      </header>
+
+      <div class="content">
+        <kendo-button class="k-primary">Click me</kendo-button>
+
+        <ul>
+          <li>
+            <input type="checkbox" id="eq1" class="k-checkbox" checked="checked">
+            <label class="k-checkbox-label" for="eq1">Rear side airbags</label>
+          </li>
+          <li>
+            <input type="checkbox" id="eq2" class="k-checkbox" checked="checked">
+            <label class="k-checkbox-label" for="eq2">Leather trim</label>
+          </li>
+        </ul>
+
+        <select kendo-combo-box
+                style="width: 300px;" >
+          <option>Albania</option>
+          <option>Andorra</option>
+          <option>Armenia</option>
+          <option>Austria</option>
+          <option>Azerbaijan</option>
+          <option>Belarus</option>
+          <option>Belgium</option>
+          <option>Bosnia & Herzegovina</option>
+          <option>Bulgaria</option>
+          <option>Croatia</option>
+          <option>Cyprus</option>
+          <option>Czech Republic</option>
+          <option>Denmark</option>
+          <option>Estonia</option>
+          <option>Finland</option>
+          <option>France</option>
+          <option>Georgia</option>
+          <option>Germany</option>
+          <option>Greece</option>
+          <option>Hungary</option>
+          <option>Iceland</option>
+          <option>Ireland</option>
+          <option>Italy</option>
+          <option>Kosovo</option>
+          <option>Latvia</option>
+          <option>Liechtenstein</option>
+          <option>Lithuania</option>
+          <option>Luxembourg</option>
+          <option>Macedonia</option>
+          <option>Malta</option>
+          <option>Moldova</option>
+          <option>Monaco</option>
+          <option>Montenegro</option>
+          <option>Netherlands</option>
+          <option>Norway</option>
+          <option>Poland</option>
+          <option>Portugal</option>
+          <option>Romania</option>
+          <option>Russia</option>
+          <option>San Marino</option>
+          <option>Serbia</option>
+          <option>Slovakia</option>
+          <option>Slovenia</option>
+          <option>Spain</option>
+          <option>Sweden</option>
+          <option>Switzerland</option>
+          <option>Turkey</option>
+          <option>Ukraine</option>
+          <option>United Kingdom</option>
+          <option>Vatican City</option>
+        </select>
+      </div>
+    </div>
+
   </body>
 </html>

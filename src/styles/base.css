@@ -1,3 +1,9 @@
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
 .text-center {
   text-align: center;
 }
@@ -7,13 +13,18 @@
 .text-right {
   text-align: right;
 }
-.no-select {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.text-bold {
+  font-weight: bold;
+}
+.text-italic {
+  font-style: italic;
+}
+.reset {
+  margin: 0;
+  padding: 0;
+}
+.default-cursor {
+  cursor: default;
 }
 .draggable {
   -webkit-app-region: drag;
@@ -21,15 +32,19 @@
 .non-draggable {
   -webkit-app-region: no-drag;
 }
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: transparent;
 }
