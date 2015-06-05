@@ -1,13 +1,17 @@
 {
   "name": "nwBase",
-  "version": "0.2.0",
+  "version": "0.5.0",
   "main": "app.html",
   "author": "Anthony S. Wu <anthonyspwu@gmail.com>",
   "window": {
     "toolbar": false,
+    "frame": false,
+    "transparent": true,
     "width": 800,
     "height": 600,
-    "resizable": false,
+    "min_width": 800,
+    "min_height": 600,
+    "resizable": true,
     "position": "mouse"
   },
   "webkit": {
@@ -15,6 +19,7 @@
   },
   "chromium-args": "--ignore-certificate-errors",
   "dependencies": {
-    "diskdb": "^0.1.14"
+    "linvodb3": "^3.8.2",
+    "medeadown": "^1.1.7"
   }
 }

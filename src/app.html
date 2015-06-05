@@ -4,8 +4,10 @@
     <title>NW Base</title>
     <meta charset="UTF-8">
     <!-- Style Libraries -->
-    <link rel="stylesheet" href="bower_components/uikit/css/uikit.almost-flat.min.css"/>
     <link rel="stylesheet" href="styles/base.css"/>
+    <link rel="stylesheet" href="styles/semantic.min.css"/>
+    <link rel="stylesheet" href="bower_components/kendo-ui/styles/kendo.common.core.min.css"/>
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"/>
 
     <!-- Core Libraries -->
     <script src="lib/windows.js"></script>
@@ -16,12 +18,18 @@
     <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
-    <script type="text/javascript" src="bower_components/uikit/js/uikit.min.js"></script>
+    <script type="text/javascript" src="bower_components/kendo-ui/js/kendo.core.min.js"></script>
+    <script type="text/javascript" src="bower_components/kendo-ui/js/kendo.ui.core.min.js"></script>
+    <script type="text/javascript" src="bower_components/kendo-ui/js/kendo.angular.min.js"></script>
 
     <!-- App Libraries -->
+    <link rel="stylesheet" href="styles/theme.css"/>
+    <link rel="stylesheet" href="styles/ui.css"/>
     <script type="text/javascript" src="app.js"></script>
   </head>
   <body ng-app="nwbase">
-    <h1>NW Base</h1>
+
+    <div ng-controller="MainController as main" style="height: 100%" ng-include="'ui/main_frame.html'"></div>
+
   </body>
 </html>
