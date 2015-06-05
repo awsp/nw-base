@@ -19,6 +19,7 @@
   },
   "chromium-args": "--ignore-certificate-errors",
   "dependencies": {
-    "diskdb": "^0.1.14"
+    "linvodb3": "^3.8.2",
+    "medeadown": "^1.1.7"
   }
 }

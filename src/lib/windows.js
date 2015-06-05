@@ -1,11 +1,10 @@
-var WindowsManager = require('nw-windows').WindowsManager;
+var WindowsManager = require('./lib/nWindowManager/boot').NWindowManager;
 var gui = require("nw.gui");
 var win = gui.Window.get();
 
 // Windows Management
-global.WindowsManager = new WindowsManager(gui, [
-  {
-    uid: "preferences",
+global.WindowsManager = new WindowsManager(gui, {
+  preferences: {
     page: "modules/preferences/panel.html",
     options: {
       frame: true,
@@ -17,7 +16,7 @@ global.WindowsManager = new WindowsManager(gui, [
       transparent: false
     }
   }
-]);
+});
 
 // Onload
 onload = function () {

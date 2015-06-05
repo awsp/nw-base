@@ -7,10 +7,6 @@ global.$ = $;
 global._ = _;
 
 
-app.controller('MainController', [function () {
-
-}]);
-
 app.controller('MainFrameController', [function () {
   this.config = {
     buttons: {
@@ -25,4 +21,8 @@ app.controller('MainFrameController', [function () {
     $event.preventDefault();
     win.close();
   }
+}]);
+
+app.controller('MainController', [function () {
+
 }]);
