@@ -1,4 +1,5 @@
-nw-base @version 0.3.0
+nw-base @version 0.3.0 [Deprecated]
+Using Electron Shell instead. 
 ------------------------------
 NW base app for creating ready-to-use desktop class-like self-contained application on all platforms.
 Along with built tools to package and distribute app in different platforms. 
